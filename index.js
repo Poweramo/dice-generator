@@ -1,5 +1,6 @@
 const firstDice = document.getElementById("first-dice");
 const secondDice = document.getElementById("second-dice");
+const rollButton = document.getElementById("roll");
 
 const numbers = [1, 2, 3, 4, 5, 6];
 let index = Math.floor(Math.random() * 10);
@@ -23,5 +24,7 @@ const rollingSecondDice = () => {
 	}
 };
 
-rollingFirstDice();
-rollingSecondDice();
+rollButton.addEventListener("click", () => {
+	rollingFirstDice();
+	rollingSecondDice();
+});
