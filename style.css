@@ -16,8 +16,8 @@ body {
 
 .dices {
 	background: black;
-	height: 200px;
-	width: 400px;
+	height: 300px;
+	width: 500px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -28,27 +28,75 @@ body {
 #second-dice {
 	background: white;
 	color: black;
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 30px;
+	font-size: 40px;
 }
 
 #roll {
-	height: 60px;
-	width: 100px;
+	height: 80px;
+	width: 130px;
 	cursor: pointer;
 	background: rgb(80, 81, 79);
 	border-radius: 5px;
 	border: 3px solid black;
 	color: #fffcff;
 	text-align: center;
-	font-size: 15px;
+	font-size: 25px;
 }
 
 #roll:hover {
-	font-size: 18px;
+	font-size: 27px;
 	background: rgb(80, 81, 79, 0.9);
+}
+
+@media screen and (max-width: 800px) {
+	.dices {
+		height: 250px;
+		width: 450px;
+	}
+
+	#first-dice,
+	#second-dice {
+		height: 130px;
+		width: 130px;
+		font-size: 40px;
+	}
+
+	#roll {
+		height: 80px;
+		width: 120px;
+		font-size: 20px;
+	}
+
+	#roll:hover {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.dices {
+		height: 200px;
+		width: 350px;
+	}
+
+	#first-dice,
+	#second-dice {
+		height: 110px;
+		width: 110px;
+		font-size: 30px;
+	}
+
+	#roll {
+		height: 60px;
+		width: 90px;
+		font-size: 15px;
+	}
+
+	#roll:hover {
+		font-size: 17px;
+	}
 }
